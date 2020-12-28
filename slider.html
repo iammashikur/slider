@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Title</title>
+
+    <style>
+        @charset "UTF-8";
+
+        .carousel-control.right {
+
+
+            background-image: none;
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
+
+        }
+
+        .carousel-control.left {
+
+            background-image: none;
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
+
+        }
+
+        .tcb-slide-slider .carousel-control {
+            width: 5%;
+        }
+
+        .tcb-slide-item {
+            border: 3px solid #ff3e3e;
+            border-radius: 5px;
+        }
+
+
+        .tcb-slide-item a {
+            color: #ffffff;
+        }
+
+        .tcb-slide-item a:hover {
+            text-decoration: none;
+        }
+
+        .tcb-slide-item .tcb-hline {
+            margin: 10px 0;
+            height: 1px;
+            background: #ccc;
+        }
+
+        @media all and (max-width: 768px) {
+            .tcb-slide-item {
+                margin-bottom: 30px;
+            }
+        }
+
+        .tcb-slide-photo {
+            text-align: center;
+            background: #fff;
+        }
+
+        .tcb-slide-photo img {
+            height: 100%;
+            width: 100%;
+            display: inline-block;
+        }
+
+        .tcb-slide-info {
+            background: #272727;
+            padding: 15px;
+        }
+
+        .tcb-slide-title h4 {
+            margin-top: 0;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+
+        .main-bg {
+            background-color: #333;
+            padding: 5px;
+        }
+
+        .carousel {
+            background: rgb(37, 36, 36);
+            padding: 20px;
+        }
+
+
+
+      
+
+        #carousel-photo-generic .tcb-slide-photo:before {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            content: "\f144";
+            font-family: FontAwesome;
+            font-size: 50px;
+            color: rgb(255, 60, 60);
+            opacity: 0.8;
+            text-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
+            pointer-events: none;
+        }
+
+        #carousel-photo-generic .tcb-slide-photo:hover:before {
+            color: rgb(0, 0, 0);
+            pointer-events: none;
+        }
+
+        .carousel-control span{
+         background-color: #000000;
+        
+        border-radius: 25px;
+        }
+        
+
+    </style>
+</head>
+
+<body>
+
+    <div class="main-bg">
+
+
+        <div class="tcb-slide-slider">
+            <div class="container">
+                <div id="carousel-photo-generic" class="carousel slide" style="border-bottom: 1px solid #fff;">
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <div class="row">
+                                <div class="col-xs-6 col-sm-3">
+                                    <div class="tcb-slide-item">
+                                        <div class="tcb-slide-photo">
+                                            <a href="#"><img src="http://via.placeholder.com/150x220"
+                                                    class="img-responsive" alt="a" /></a>
+                                        </div>
+                                        <div class="tcb-slide-info">
+                                            <div class="tcb-slide-title">
+                                                <h4><a href="#">Olympus Photo Camera </a></h4>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 col-sm-3">
+                                    <div class="tcb-slide-item">
+                                        <div class="tcb-slide-photo">
+                                            <a href="#"><img src="http://via.placeholder.com/150x220"
+                                                    class="img-responsive" alt="a" /></a>
+                                        </div>
+                                        <div class="tcb-slide-info">
+                                            <div class="tcb-slide-title">
+                                                <h4><a href="#">Coca Cola Bottle</a></h4>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 col-sm-3">
+                                    <div class="tcb-slide-item">
+                                        <div class="tcb-slide-photo">
+                                            <a href="#"><img src="http://via.placeholder.com/150x220"
+                                                    class="img-responsive" alt="a" /></a>
+                                        </div>
+                                        <div class="tcb-slide-info">
+                                            <div class="tcb-slide-title">
+                                                <h4><a href="#">Jewel from Italy</a></h4>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 col-sm-3">
+                                    <div class="tcb-slide-item">
+                                        <div class="tcb-slide-photo">
+                                            <a href="#"><img src="http://via.placeholder.com/150x220"
+                                                    class="img-responsive" alt="a" /></a>
+                                        </div>
+                                        <div class="tcb-slide-info">
+                                            <div class="tcb-slide-title">
+                                                <h4><a href="#">White Pepper</a></h4>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="row">
+                                <div class="col-xs-6 col-sm-3">
+                                    <div class="tcb-slide-item">
+                                        <div class="tcb-slide-photo">
+                                            <a href="#"><img src="http://via.placeholder.com/150x220"
+                                                    class="img-responsive" alt="a" /></a>
+                                        </div>
+                                        <div class="tcb-slide-info">
+                                            <div class="tcb-slide-title">
+                                                <h4><a href="#">Belt Improted From Japan</a></h4>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 col-sm-3">
+                                    <div class="tcb-slide-item">
+                                        <div class="tcb-slide-photo">
+                                            <a href="#"><img src="http://via.placeholder.com/150x220"
+                                                    class="img-responsive" alt="a" /></a>
+                                        </div>
+                                        <div class="tcb-slide-info">
+                                            <div class="tcb-slide-title">
+                                                <h4><a href="#">Tomato</a></h4>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 col-sm-3">
+                                    <div class="tcb-slide-item">
+                                        <div class="tcb-slide-photo">
+                                            <a href="#"><img src="http://via.placeholder.com/150x220"
+                                                    class="img-responsive" alt="a" /></a>
+                                        </div>
+                                        <div class="tcb-slide-info">
+                                            <div class="tcb-slide-title">
+                                                <h4><a href="#">Tape Line</a></h4>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 col-sm-3">
+                                    <div class="tcb-slide-item">
+                                        <div class="tcb-slide-photo">
+                                            <a href="#"><img src="http://via.placeholder.com/150x220"
+                                                    class="img-responsive" alt="a" /></a>
+                                        </div>
+                                        <div class="tcb-slide-info">
+                                            <div class="tcb-slide-title">
+                                                <h4><a href="#">Test Glasses For Lab</a></h4>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="row">
+                                <div class="col-xs-6 col-sm-3">
+                                    <div class="tcb-slide-item">
+                                        <div class="tcb-slide-photo">
+                                            <a href="#"><img src="http://via.placeholder.com/150x220"
+                                                    class="img-responsive" alt="a" /></a>
+                                        </div>
+                                        <div class="tcb-slide-info">
+                                            <div class="tcb-slide-title">
+                                                <h4><a href="#">Jewel From India</a></h4>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 col-sm-3">
+                                    <div class="tcb-slide-item">
+                                        <div class="tcb-slide-photo">
+                                            <a href="#"><img src="http://via.placeholder.com/150x220"
+                                                    class="img-responsive" alt="a" /></a>
+                                        </div>
+                                        <div class="tcb-slide-info">
+                                            <div class="tcb-slide-title">
+                                                <h4><a href="#">Red Pepper</a></h4>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 col-sm-3">
+                                    <div class="tcb-slide-item">
+                                        <div class="tcb-slide-photo">
+                                            <a href="#"><img src="http://via.placeholder.com/150x220"
+                                                    class="img-responsive" alt="a" /></a>
+                                        </div>
+                                        <div class="tcb-slide-info">
+                                            <div class="tcb-slide-title">
+                                                <h4><a href="#">Pro Cell Batteries </a></h4>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 col-sm-3">
+                                    <div class="tcb-slide-item">
+                                        <div class="tcb-slide-photo">
+                                            <a href="#"><img src="http://via.placeholder.com/150x220"
+                                                    class="img-responsive" alt="a" /></a>
+                                        </div>
+                                        <div class="tcb-slide-info">
+                                            <div class="tcb-slide-title">
+                                                <h4><a href="#">Eye Glasses </a></h4>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#carousel-photo-generic" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-photo-generic" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+        <div class="tcb-slide-slider">
+            <div class="container">
+                <div id="carousel-video-generic" class="carousel slide" style="border-top: 2px solid rgb(88, 88, 88);">
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <div class="row">
+                                <div class="col-xs-6 col-sm-3">
+                                    <div class="tcb-slide-item">
+                                        <div class="tcb-slide-photo">
+                                            <a href="#"><img src="http://via.placeholder.com/150x100"
+                                                    class="img-responsive" alt="a" /></a>
+                                        </div>
+                                        <div class="tcb-slide-info">
+                                            <div class="tcb-slide-title">
+                                                <h4><a href="#">Olympus Photo Camera </a></h4>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 col-sm-3">
+                                    <div class="tcb-slide-item">
+                                        <div class="tcb-slide-photo">
+                                            <a href="#"><img src="http://via.placeholder.com/150x100"
+                                                    class="img-responsive" alt="a" /></a>
+                                        </div>
+                                        <div class="tcb-slide-info">
+                                            <div class="tcb-slide-title">
+                                                <h4><a href="#">Coca Cola Bottle</a></h4>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 col-sm-3">
+                                    <div class="tcb-slide-item">
+                                        <div class="tcb-slide-photo">
+                                            <a href="#"><img src="http://via.placeholder.com/150x100"
+                                                    class="img-responsive" alt="a" /></a>
+                                        </div>
+                                        <div class="tcb-slide-info">
+                                            <div class="tcb-slide-title">
+                                                <h4><a href="#">Jewel from Italy</a></h4>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 col-sm-3">
+                                    <div class="tcb-slide-item">
+                                        <div class="tcb-slide-photo">
+                                            <a href="#"><img src="http://via.placeholder.com/150x100"
+                                                    class="img-responsive" alt="a" /></a>
+                                        </div>
+                                        <div class="tcb-slide-info">
+                                            <div class="tcb-slide-title">
+                                                <h4><a href="#">White Pepper</a></h4>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="row">
+                                <div class="col-xs-6 col-sm-3">
+                                    <div class="tcb-slide-item">
+                                        <div class="tcb-slide-photo">
+                                            <a href="#"><img src="http://via.placeholder.com/150x100"
+                                                    class="img-responsive" alt="a" /></a>
+                                        </div>
+                                        <div class="tcb-slide-info">
+                                            <div class="tcb-slide-title">
+                                                <h4><a href="#">Belt Improted From Japan</a></h4>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 col-sm-3">
+                                    <div class="tcb-slide-item">
+                                        <div class="tcb-slide-photo">
+                                            <a href="#"><img src="http://via.placeholder.com/150x100"
+                                                    class="img-responsive" alt="a" /></a>
+                                        </div>
+                                        <div class="tcb-slide-info">
+                                            <div class="tcb-slide-title">
+                                                <h4><a href="#">Tomato</a></h4>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 col-sm-3">
+                                    <div class="tcb-slide-item">
+                                        <div class="tcb-slide-photo">
+                                            <a href="#"><img src="http://via.placeholder.com/150x100"
+                                                    class="img-responsive" alt="a" /></a>
+                                        </div>
+                                        <div class="tcb-slide-info">
+                                            <div class="tcb-slide-title">
+                                                <h4><a href="#">Tape Line</a></h4>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 col-sm-3">
+                                    <div class="tcb-slide-item">
+                                        <div class="tcb-slide-photo">
+                                            <a href="#"><img src="http://via.placeholder.com/150x100"
+                                                    class="img-responsive" alt="a" /></a>
+                                        </div>
+                                        <div class="tcb-slide-info">
+                                            <div class="tcb-slide-title">
+                                                <h4><a href="#">Test Glasses For Lab</a></h4>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="row">
+                                <div class="col-xs-6 col-sm-3">
+                                    <div class="tcb-slide-item">
+                                        <div class="tcb-slide-photo">
+                                            <a href="#"><img src="http://via.placeholder.com/150x100"
+                                                    class="img-responsive" alt="a" /></a>
+                                        </div>
+                                        <div class="tcb-slide-info">
+                                            <div class="tcb-slide-title">
+                                                <h4><a href="#">Jewel From India</a></h4>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 col-sm-3">
+                                    <div class="tcb-slide-item">
+                                        <div class="tcb-slide-photo">
+                                            <a href="#"><img src="http://via.placeholder.com/150x100"
+                                                    class="img-responsive" alt="a" /></a>
+                                        </div>
+                                        <div class="tcb-slide-info">
+                                            <div class="tcb-slide-title">
+                                                <h4><a href="#">Red Pepper</a></h4>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 col-sm-3">
+                                    <div class="tcb-slide-item">
+                                        <div class="tcb-slide-photo">
+                                            <a href="#"><img src="http://via.placeholder.com/150x100"
+                                                    class="img-responsive" alt="a" /></a>
+                                        </div>
+                                        <div class="tcb-slide-info">
+                                            <div class="tcb-slide-title">
+                                                <h4><a href="#">Pro Cell Batteries </a></h4>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 col-sm-3">
+                                    <div class="tcb-slide-item">
+                                        <div class="tcb-slide-photo">
+                                            <a href="#"><img src="http://via.placeholder.com/150x100"
+                                                    class="img-responsive" alt="a" /></a>
+                                        </div>
+                                        <div class="tcb-slide-info">
+                                            <div class="tcb-slide-title">
+                                                <h4><a href="#">Eye Glasses </a></h4>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#carousel-video-generic" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-video-generic" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+
+</html>
